@@ -1,8 +1,3 @@
-
-"""Data models for pipeline traces and spans.
-See SYSTEM_DESIGN.md, section 2, for the full spec.
-TODO: implement Span, SpanStatus, PipelineTrace here.
-"""
 """Data models for pipeline traces and spans.
 
 See SYSTEM_DESIGN.md, section 3, for the full spec.
@@ -16,7 +11,7 @@ from datetime import datetime, timezone
 from enum import Enum
 from typing import Optional
 
-#_now allows lesws repitition of timezone.utc in default_factory calls, and makes it easier to mock time in tests. 
+
 def _now() -> datetime:
     return datetime.now(timezone.utc)
 
