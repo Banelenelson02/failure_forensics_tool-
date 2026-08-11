@@ -4,7 +4,7 @@
 An observability layer for multi-step AI pipelines that traces every intermediate step. It identifies exactly where failures originate when the final output is bad and feeds flagged failures back into a growing evaluation dataset.
 
 ## Why This Project Exists
-When a complex AI pipeline produces bad results, most teams have no idea which step broke. This project solves that by providing full tracing and observability, showcasing senior-level engineering skills.
+When a complex AI pipeline produces bad results, most teams have no idea which step broke. Without tracing, debugging means manually re-running each step and guessing where it went wrong. This project solves that by providing full observability into every stage of the pipeline, so failures can be pinpointed instead of guessed at.
 
 See SYSTEM_DESIGN.md for the full architecture, data flow, and what each file needs to do.
 
