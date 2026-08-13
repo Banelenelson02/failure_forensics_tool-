@@ -85,8 +85,6 @@ def test_step_failure_halts_pipeline(monkeypatch):
     assert saved["final_status"] == "FAILED"
 
 
-# --- small helpers -----------------------------------------------------
-
 def tmp_path_traces_dir():
     from pathlib import Path
     return Path("traces")

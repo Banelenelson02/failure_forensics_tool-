@@ -59,8 +59,6 @@ class Span:
             "duration_ms": self.duration_ms,
         }
 
-
-# Worse-status wins when computing a trace's overall outcome.
 _SEVERITY = {SpanStatus.OK: 0, SpanStatus.FLAGGED: 1, SpanStatus.FAILED: 2}
 
 

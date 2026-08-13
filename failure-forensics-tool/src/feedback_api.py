@@ -51,7 +51,7 @@ def list_traces(
         if status:
             rows = conn.execute(
                 """SELECT trace_id, final_status, created_at, flagged_for_eval
-                   FROM traces WHERE final_status = ?
+                   FROM traces WHERE final_status = ?[]
                    ORDER BY created_at DESC""",
                 (status.upper(),),
             ).fetchall()

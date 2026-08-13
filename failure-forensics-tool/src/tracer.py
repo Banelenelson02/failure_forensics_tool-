@@ -19,8 +19,6 @@ import sqlite3
 
 from .models import PipelineTrace, Span, SpanStatus
 
-# OpenTelemetry is optional at runtime (e.g. in a bare test env) — degrade
-# gracefully to a no-op context manager rather than hard-failing on import.
 try:
     from opentelemetry import trace as otel_trace
     _otel_tracer = otel_trace.get_tracer(__name__)
